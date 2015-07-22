@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TableAnimations_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="pwE-5Y-1vj">
+                            <items>
+                                <tableRow identifier="MessageRow" selectable="NO" id="DOH-8k-CXj" customClass="MessageRow" customModule="TableAnimations_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="1aq-dq-pL6">
+                                        <items>
+                                            <imageView width="20" height="20" alignment="center" image="arrows0" id="a29-zJ-D1O"/>
+                                            <label alignment="center" text="ALPHABETICAL" id="ZFf-qt-CCj">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="a29-zJ-D1O" id="gSo-ld-JDL"/>
+                                        <outlet property="label" destination="ZFf-qt-CCj" id="2bu-92-RAA"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="ItemRow" id="Dh5-Tg-KFE" customClass="ItemRow" customModule="TableAnimations_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" spacing="8" id="K3p-hY-FSK">
+                                        <items>
+                                            <group width="20" height="20" alignment="left" verticalAlignment="center" radius="10" id="ycm-Ys-jrk">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="tV7-en-57P">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.0" green="0.39954377691493992" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="Te2-up-Pfz"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="8" right="0.0" top="4" bottom="4"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="name" destination="Te2-up-Pfz" id="hKR-DB-ToK"/>
+                                        <outlet property="rank" destination="tV7-en-57P" id="MeT-bB-V4s"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="WgB-SA-b0J">
+                        <items>
+                            <menuItem title="Alphabetical" image="alphabetical" id="GbJ-Kv-7nc">
+                                <connections>
+                                    <action selector="tapAlphabetical" destination="AgC-eL-Hgc" id="08G-aS-hh0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Ranking" image="ranking" id="u1v-Fb-UFt">
+                                <connections>
+                                    <action selector="tapRanking" destination="AgC-eL-Hgc" id="K0o-eR-MRj"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="table" destination="pwE-5Y-1vj" id="AGH-2k-XXa"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

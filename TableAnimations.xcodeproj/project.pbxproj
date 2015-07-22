@@ -13,6 +13,14 @@
 		2B1748F81B5F95020002CB6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1748F71B5F95020002CB6F /* Images.xcassets */; };
 		2B1748FB1B5F95020002CB6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1748F91B5F95020002CB6F /* LaunchScreen.xib */; };
 		2B1749071B5F95020002CB6F /* TableAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1749061B5F95020002CB6F /* TableAnimationsTests.swift */; };
+		2B1749191B5F96590002CB6F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1749181B5F96590002CB6F /* InterfaceController.swift */; };
+		2B17491B1B5F96590002CB6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B17491A1B5F96590002CB6F /* Images.xcassets */; };
+		2B17491F1B5F96590002CB6F /* TableAnimations WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 2B17491E1B5F96590002CB6F /* TableAnimations WatchKit App.app */; };
+		2B1749271B5F96590002CB6F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1749251B5F96590002CB6F /* Interface.storyboard */; };
+		2B1749291B5F96590002CB6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1749281B5F96590002CB6F /* Images.xcassets */; };
+		2B17492C1B5F96590002CB6F /* TableAnimations WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B1749141B5F96590002CB6F /* TableAnimations WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B1749351B5F9A270002CB6F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1749341B5F9A270002CB6F /* ItemRow.swift */; };
+		2B1749371B5F9A6D0002CB6F /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1749361B5F9A6D0002CB6F /* MessageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,35 @@
 			remoteGlobalIDString = 2B1748EA1B5F95020002CB6F;
 			remoteInfo = TableAnimations;
 		};
+		2B1749201B5F96590002CB6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1748E31B5F95020002CB6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B17491D1B5F96590002CB6F;
+			remoteInfo = "TableAnimations WatchKit App";
+		};
+		2B17492A1B5F96590002CB6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1748E31B5F95020002CB6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B1749131B5F96590002CB6F;
+			remoteInfo = "TableAnimations WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B1749331B5F96590002CB6F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B17492C1B5F96590002CB6F /* TableAnimations WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B1748EB1B5F95020002CB6F /* TableAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,16 @@
 		2B1749001B5F95020002CB6F /* TableAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1749051B5F95020002CB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B1749061B5F95020002CB6F /* TableAnimationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAnimationsTests.swift; sourceTree = "<group>"; };
+		2B1749141B5F96590002CB6F /* TableAnimations WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TableAnimations WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1749171B5F96590002CB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1749181B5F96590002CB6F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2B17491A1B5F96590002CB6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B17491E1B5F96590002CB6F /* TableAnimations WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableAnimations WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1749241B5F96590002CB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1749261B5F96590002CB6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2B1749281B5F96590002CB6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B1749341B5F9A270002CB6F /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		2B1749361B5F9A6D0002CB6F /* MessageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B1749111B5F96590002CB6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +114,8 @@
 			children = (
 				2B1748ED1B5F95020002CB6F /* TableAnimations */,
 				2B1749031B5F95020002CB6F /* TableAnimationsTests */,
+				2B1749151B5F96590002CB6F /* TableAnimations WatchKit Extension */,
+				2B1749221B5F96590002CB6F /* TableAnimations WatchKit App */,
 				2B1748EC1B5F95020002CB6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +125,8 @@
 			children = (
 				2B1748EB1B5F95020002CB6F /* TableAnimations.app */,
 				2B1749001B5F95020002CB6F /* TableAnimationsTests.xctest */,
+				2B1749141B5F96590002CB6F /* TableAnimations WatchKit Extension.appex */,
+				2B17491E1B5F96590002CB6F /* TableAnimations WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +169,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2B1749151B5F96590002CB6F /* TableAnimations WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B1749181B5F96590002CB6F /* InterfaceController.swift */,
+				2B1749341B5F9A270002CB6F /* ItemRow.swift */,
+				2B1749361B5F9A6D0002CB6F /* MessageRow.swift */,
+				2B17491A1B5F96590002CB6F /* Images.xcassets */,
+				2B1749161B5F96590002CB6F /* Supporting Files */,
+			);
+			path = "TableAnimations WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2B1749161B5F96590002CB6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1749171B5F96590002CB6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B1749221B5F96590002CB6F /* TableAnimations WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2B1749251B5F96590002CB6F /* Interface.storyboard */,
+				2B1749281B5F96590002CB6F /* Images.xcassets */,
+				2B1749231B5F96590002CB6F /* Supporting Files */,
+			);
+			path = "TableAnimations WatchKit App";
+			sourceTree = "<group>";
+		};
+		2B1749231B5F96590002CB6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1749241B5F96590002CB6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +217,12 @@
 				2B1748E71B5F95020002CB6F /* Sources */,
 				2B1748E81B5F95020002CB6F /* Frameworks */,
 				2B1748E91B5F95020002CB6F /* Resources */,
+				2B1749331B5F96590002CB6F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2B17492B1B5F96590002CB6F /* PBXTargetDependency */,
 			);
 			name = TableAnimations;
 			productName = TableAnimations;
@@ -150,6 +247,39 @@
 			productReference = 2B1749001B5F95020002CB6F /* TableAnimationsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2B1749131B5F96590002CB6F /* TableAnimations WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1749321B5F96590002CB6F /* Build configuration list for PBXNativeTarget "TableAnimations WatchKit Extension" */;
+			buildPhases = (
+				2B1749101B5F96590002CB6F /* Sources */,
+				2B1749111B5F96590002CB6F /* Frameworks */,
+				2B1749121B5F96590002CB6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B1749211B5F96590002CB6F /* PBXTargetDependency */,
+			);
+			name = "TableAnimations WatchKit Extension";
+			productName = "TableAnimations WatchKit Extension";
+			productReference = 2B1749141B5F96590002CB6F /* TableAnimations WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		2B17491D1B5F96590002CB6F /* TableAnimations WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1749311B5F96590002CB6F /* Build configuration list for PBXNativeTarget "TableAnimations WatchKit App" */;
+			buildPhases = (
+				2B17491C1B5F96590002CB6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TableAnimations WatchKit App";
+			productName = "TableAnimations WatchKit App";
+			productReference = 2B17491E1B5F96590002CB6F /* TableAnimations WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +295,12 @@
 					2B1748FF1B5F95020002CB6F = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 2B1748EA1B5F95020002CB6F;
+					};
+					2B1749131B5F96590002CB6F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2B17491D1B5F96590002CB6F = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +319,8 @@
 			targets = (
 				2B1748EA1B5F95020002CB6F /* TableAnimations */,
 				2B1748FF1B5F95020002CB6F /* TableAnimationsTests */,
+				2B1749131B5F96590002CB6F /* TableAnimations WatchKit Extension */,
+				2B17491D1B5F96590002CB6F /* TableAnimations WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +340,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1749121B5F96590002CB6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B17491F1B5F96590002CB6F /* TableAnimations WatchKit App.app in Resources */,
+				2B17491B1B5F96590002CB6F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B17491C1B5F96590002CB6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1749271B5F96590002CB6F /* Interface.storyboard in Resources */,
+				2B1749291B5F96590002CB6F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +381,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B1749101B5F96590002CB6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1749191B5F96590002CB6F /* InterfaceController.swift in Sources */,
+				2B1749351B5F9A270002CB6F /* ItemRow.swift in Sources */,
+				2B1749371B5F9A6D0002CB6F /* MessageRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +398,16 @@
 			isa = PBXTargetDependency;
 			target = 2B1748EA1B5F95020002CB6F /* TableAnimations */;
 			targetProxy = 2B1749011B5F95020002CB6F /* PBXContainerItemProxy */;
+		};
+		2B1749211B5F96590002CB6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B17491D1B5F96590002CB6F /* TableAnimations WatchKit App */;
+			targetProxy = 2B1749201B5F96590002CB6F /* PBXContainerItemProxy */;
+		};
+		2B17492B1B5F96590002CB6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B1749131B5F96590002CB6F /* TableAnimations WatchKit Extension */;
+			targetProxy = 2B17492A1B5F96590002CB6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +426,14 @@
 				2B1748FA1B5F95020002CB6F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2B1749251B5F96590002CB6F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1749261B5F96590002CB6F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +574,62 @@
 			};
 			name = Release;
 		};
+		2B17492D1B5F96590002CB6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TableAnimations WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2B17492E1B5F96590002CB6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TableAnimations WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2B17492F1B5F96590002CB6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TableAnimations_WatchKit_Extension;
+				INFOPLIST_FILE = "TableAnimations WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		2B1749301B5F96590002CB6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TableAnimations_WatchKit_Extension;
+				INFOPLIST_FILE = "TableAnimations WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,12 +649,30 @@
 				2B17490C1B5F95020002CB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B17490D1B5F95020002CB6F /* Build configuration list for PBXNativeTarget "TableAnimationsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B17490E1B5F95020002CB6F /* Debug */,
 				2B17490F1B5F95020002CB6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1749311B5F96590002CB6F /* Build configuration list for PBXNativeTarget "TableAnimations WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B17492F1B5F96590002CB6F /* Debug */,
+				2B1749301B5F96590002CB6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B1749321B5F96590002CB6F /* Build configuration list for PBXNativeTarget "TableAnimations WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B17492D1B5F96590002CB6F /* Debug */,
+				2B17492E1B5F96590002CB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
