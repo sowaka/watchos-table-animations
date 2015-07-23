@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HlJ-hz-2dK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
+        <scene sceneID="mc3-rH-GdU">
+            <objects>
+                <controller id="HlJ-hz-2dK" customClass="InterfaceController" customModule="TableAnimations_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Sample1" id="rbL-jH-kEM">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="gPN-NM-mJD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sample2" id="XMR-Vl-mU3">
+                            <connections>
+                                <segue destination="ioX-BJ-woQ" kind="push" id="BgT-ou-T88"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="240" y="218"/>
+        </scene>
+        <!--Sample1 Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TableAnimations_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="Sample1Controller" customModule="TableAnimations_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="pwE-5Y-1vj">
                             <items>
@@ -43,8 +63,8 @@
                                         <edgeInsets key="margins" left="8" right="0.0" top="4" bottom="4"/>
                                     </group>
                                     <connections>
-                                        <outlet property="name" destination="Te2-up-Pfz" id="hKR-DB-ToK"/>
-                                        <outlet property="rank" destination="tV7-en-57P" id="MeT-bB-V4s"/>
+                                        <outlet property="name" destination="Te2-up-Pfz" id="ETI-cA-8ud"/>
+                                        <outlet property="rank" destination="tV7-en-57P" id="3kx-vg-HBj"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -54,21 +74,65 @@
                         <items>
                             <menuItem title="Alphabetical" image="alphabetical" id="GbJ-Kv-7nc">
                                 <connections>
-                                    <action selector="tapAlphabetical" destination="AgC-eL-Hgc" id="08G-aS-hh0"/>
+                                    <action selector="tapAlphabetical" destination="AgC-eL-Hgc" id="YlZ-pI-udy"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Ranking" image="ranking" id="u1v-Fb-UFt">
                                 <connections>
-                                    <action selector="tapRanking" destination="AgC-eL-Hgc" id="K0o-eR-MRj"/>
+                                    <action selector="tapRanking" destination="AgC-eL-Hgc" id="xzH-4A-hbc"/>
                                 </connections>
                             </menuItem>
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="table" destination="pwE-5Y-1vj" id="AGH-2k-XXa"/>
+                        <outlet property="table" destination="pwE-5Y-1vj" id="pzh-yg-U5H"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="513" y="71"/>
+        </scene>
+        <!--Sample2 Controller-->
+        <scene sceneID="REn-o5-KEe">
+            <objects>
+                <controller id="ioX-BJ-woQ" customClass="Sample2Controller" customModule="TableAnimations_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="S3R-kX-0il">
+                            <items>
+                                <tableRow identifier="ContentRow" id="S4I-sT-88N" customClass="ContentRow" customModule="TableAnimations_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="top" layout="vertical" id="5k6-eD-Dsc">
+                                        <items>
+                                            <label alignment="left" text="Onigiri is a common sight in bentos (boxed lunches). It is great for picnics or a simple snack. " numberOfLines="2" id="W5N-Ww-b8U">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label alignment="left" text="Tap for more..." id="i3P-zg-Ytk">
+                                                <color key="textColor" red="0.0" green="0.39954377689999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label alignment="left" hidden="YES" text="Onigiri is a common sight in bentos (boxed lunches). It is great for picnics or a simple snack." numberOfLines="0" id="HSD-zf-yFN">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label alignment="left" hidden="YES" text="Tap for less..." id="OJa-Gx-12B">
+                                                <color key="textColor" red="0.0" green="0.39954377689999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="fullDescriptionLabel" destination="HSD-zf-yFN" id="P8u-R8-Ify"/>
+                                        <outlet property="lessLabel" destination="OJa-Gx-12B" id="vts-6l-8Ex"/>
+                                        <outlet property="moreLabel" destination="i3P-zg-Ytk" id="81b-d3-Ams"/>
+                                        <outlet property="shortDescriptionLabel" destination="W5N-Ww-b8U" id="zhC-wo-chD"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="S3R-kX-0il" id="aN9-QA-1f8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="504" y="327.25"/>
         </scene>
     </scenes>
 </document>

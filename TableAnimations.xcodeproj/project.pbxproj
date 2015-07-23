@@ -21,6 +21,9 @@
 		2B17492C1B5F96590002CB6F /* TableAnimations WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B1749141B5F96590002CB6F /* TableAnimations WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B1749351B5F9A270002CB6F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1749341B5F9A270002CB6F /* ItemRow.swift */; };
 		2B1749371B5F9A6D0002CB6F /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1749361B5F9A6D0002CB6F /* MessageRow.swift */; };
+		2BF592561B606707003C56A2 /* Sample1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF592551B606707003C56A2 /* Sample1Controller.swift */; };
+		2BF592581B60671C003C56A2 /* Sample2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF592571B60671C003C56A2 /* Sample2Controller.swift */; };
+		2BF5925A1B60678D003C56A2 /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF592591B60678D003C56A2 /* ContentRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		2B1749281B5F96590002CB6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B1749341B5F9A270002CB6F /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		2B1749361B5F9A6D0002CB6F /* MessageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		2BF592551B606707003C56A2 /* Sample1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample1Controller.swift; sourceTree = "<group>"; };
+		2BF592571B60671C003C56A2 /* Sample2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample2Controller.swift; sourceTree = "<group>"; };
+		2BF592591B60678D003C56A2 /* ContentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +179,11 @@
 			isa = PBXGroup;
 			children = (
 				2B1749181B5F96590002CB6F /* InterfaceController.swift */,
+				2BF592551B606707003C56A2 /* Sample1Controller.swift */,
+				2BF592571B60671C003C56A2 /* Sample2Controller.swift */,
 				2B1749341B5F9A270002CB6F /* ItemRow.swift */,
 				2B1749361B5F9A6D0002CB6F /* MessageRow.swift */,
+				2BF592591B60678D003C56A2 /* ContentRow.swift */,
 				2B17491A1B5F96590002CB6F /* Images.xcassets */,
 				2B1749161B5F96590002CB6F /* Supporting Files */,
 			);
@@ -386,7 +395,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1749191B5F96590002CB6F /* InterfaceController.swift in Sources */,
+				2BF592561B606707003C56A2 /* Sample1Controller.swift in Sources */,
+				2BF592581B60671C003C56A2 /* Sample2Controller.swift in Sources */,
 				2B1749351B5F9A270002CB6F /* ItemRow.swift in Sources */,
+				2BF5925A1B60678D003C56A2 /* ContentRow.swift in Sources */,
 				2B1749371B5F9A6D0002CB6F /* MessageRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -620,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = TableAnimations_WatchKit_Extension;
 				INFOPLIST_FILE = "TableAnimations WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -667,6 +681,7 @@
 				2B1749301B5F96590002CB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B1749321B5F96590002CB6F /* Build configuration list for PBXNativeTarget "TableAnimations WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -675,6 +690,7 @@
 				2B17492E1B5F96590002CB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
